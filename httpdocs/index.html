@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Stéphane Castrec development page</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-1.1.0.min.css">
+  <link href="css/style2.css" rel="stylesheet" type="text/css" media="screen"/>
+</head>
+<body>
+
+	<div class="topbar"> 
+      <div class="fill"> 
+        <div class="container"> 
+          <h3><a onclick="displayMainContent(1)">Stéphane Castrec</a></h3> 
+          <ul class="menu"> 
+            <li id="menuhome" class="active"><a onclick="displayMainContent(1)">Home</a></li> 
+            <li id="menumoi"><a onclick="displayMainContent(8)">A propos</a></li> 
+            <li id="menudevmobile"><a onclick="displayMainContent(2)">Développement mobile</a></li> 
+            <li id="menucontact"><a onclick="displayMainContent(3)">Contact</a></li>
+          </ul> 
+        </div> 
+      </div> 
+    </div> 
+	
+	<div class="container" id="main_content">	
+	<!---------------------- Main pages ---------------------------->
+		<section id="Home">
+			<div class="page-header">
+				<h1>Home</h1>
+			</div>
+				<p>
+					Ce site a pour objectif de présenter mes différentes applications mobiles. <br>
+					Pour cela, je vous invite à consulter la partie "développement mobile". Pour chaque application, une présentation succincte ainsi qu'une gallerie photo permettant d'avoir un aperçu rapide de celle-ci. Enfin, accéder en un clic au market pour un téléchargement rapide des applications.
+				</p>
+		</section>
+		
+		<section id="Devmobile">
+			<div class="page-header">
+				<h1>Développement mobile</h1>
+			</div>
+			<div class="row show-grid">
+				<div class="span8 column">
+				<a onclick="displayMainContent(4)">
+					<div class="diviconleft">
+						<img src="../img/mobiles/comnotes/icon.PNG">
+					</div>
+					<div class="divdescriptionleft">
+						<h2 class="articletitle">Troovon</h2>
+						<p>
+							Application Android lancée à la suite du Startup Weekend Nantes.
+						</p>
+					</div>
+				</a>
+				</div>
+				<div class="span8 column">
+					<a onclick="displayMainContent(5)">
+					<div class="diviconright">
+						<img src="../img/mobiles/comnotes/icon.PNG">
+					</div>
+					<div class="divdescriptionright">
+						<h2 class="articletitle">Community Notes</h1>
+						<p>
+							Application Android facilitant le quotidien des personnes vivant en colocation.<br> (Numéro 1 au concours Mobi'Life)
+						</p>
+					</div>
+					</a>
+				</div>
+			</div>
+			<div class="row show-grid">
+				<div class="span8 column">
+					<a onclick="displayMainContent(6)">
+					<div>
+						<div class="diviconleft">
+							<img src="../img/mobiles/taskmgr/icon.PNG">
+						</div>
+						<div class="divdescriptionleft">
+							<h2 class="articletitle">MultiTask Manager</h1>
+							<p>
+								Application Android permettant une gestion accrue des applications tournant en tache de fond.
+							</p>
+						</div>
+					</div>
+					</a>
+				</div>
+				<div class="span8 column">
+					<a onclick="displayMainContent(7)">
+					<div class="diviconright">
+						<img src="../img/mobiles/rakdroid/icon.PNG">
+					</div>
+					<div class="divdescriptionright">
+						<h2 class="articletitle"> RakDroid</h1> 
+						<p>
+							Application Android permettant aux élèves de TELECOM Bretagne de consulter les repas de la semaine.
+						</p>
+					</div>
+					</a>
+				</div>
+			</div>
+		</section>
+		
+		<section id="Contact">
+			<div class="page-header">
+				<h1>Contact</h1>
+			</div>
+			<form action="mail.php" method="post">
+				<input id="xlInput" class="xlarge" type="text" name="name" placeholder="Your name" size="100" required><br><br>
+				<input type="text" id="xlInput" class="xlarge" name="mail" placeholder="Your email address" size="100" required><br><br>
+				<textarea id="textarea" class="xxlarge" name="message" placeholder="Your message" size="100" required></textarea><br><br>
+				<input class="btn large primary" type="submit" value="Send"><br>
+			</form>
+		</section>
+		
+		<section id="Moi">
+			<div class="page-header">
+				<h1>A propos</h1>
+			</div>
+			<p>
+			<div class="row show-grid">
+				<div class="span5 columns">
+					<img src="../img/icons/photo.jpg">
+				</div>
+				<div class="span11 columns">
+					<p>
+						Passionné d'innovation et de développement mobile, j'ai intégré TELECOM Bretagne dans le cadre de la formation d'ingénieur par alternance. Cette formation m'a permis d'appréhender l'ensemble des techniques de l'ingénieur. D'abord, d'un point de vue théorique par la formation dispensée au sein de l'école. Ensuite, d'un point de vue plus pratique, par mes trois années d'apprentissages à Alcatel-Lucent.<br>  
+						C'est en parallèle de cette formation que je me suis mis au développement d'application mobile à destination du système d'exploitation Android. Ces différents développements m'ont amené à déposer quatre applications sur l'Android Market que je vous invite à tester.<br> Il est à noter que sur ces quatre applications, deux d'entres ont été primées:
+						<ul>
+							<li><h4>Troovon:</h4> 2<sup>nd</sup> au Startup Weekend Nantes.</li>
+							<li><h4>Community Notes:</h4>1<sup>ere</sup> au concours d'application mobile <strong>Mobi'Life</strong>.</li>
+						</ul>
+						
+					</p>
+				</div>
+			</p>
+		</section>
+		
+		<!-------------------------------------- mobile part ----------------------------------------->
+		<!-------------------------------------- comnotes part ----------------------------------------->
+		<section id="comnotes">
+			<div class="page-header">
+				<h1>Community Notes</h1>
+			</div>
+			<div class="row show-grid">
+				<div class="span11 columns">
+					<div class="description">
+					<p>
+						Dans tous types de communautés, des échanges de tâches, de facture, le partage d’information est une chose fondamentale. On observe par exemple dans certaines familles ou colocation l’apparition de tableaux « Mémo » ou des post-it sur le bureau afin de s’échanger les informations indispensables. Le but de Community Notes est donc de simplifier ça au travers d’une application mobile. Transporter votre "Memo" partout avec vous.<br>
+						Grace à cet application vous pourrez donc vous créer votre propre réseau social fermé et effectuer les fonctions suivantes:
+						<ul>
+							<li>Partage de notes simple ou "à faire"</li>
+							<li>Partage de listes</li>
+							<li>Partage de factures</li>
+						</ul>  
+					</p>
+					<h3><a href="#">Bientôt sur le market</a></h3>
+
+					</div>
+				</div>
+				<div class="span5 columns">
+					<div class='gallery'>
+						<img src="../../img/mobiles/comnotes/1.png" class="imgmaxi"/>
+						<div class="pagination">
+  							<ul class="comnotes">
+  				 	 			<li class="active"><a href="#">1</a></li>
+    							<li><a href="#">2</a></li>
+   					 			<li><a href="#">3</a></li>
+   					 			<li><a href="#">4</a></li>
+  							</ul
+  						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-------------------------------------- troovon part ----------------------------------------->
+		<section id="troovon">
+			<div class="page-header">
+				<h1>Troovon</h1>
+			</div>
+			<div class="row show-grid">
+				<div class="span11 columns">
+					<div class="description">
+					<p>
+						Troovon est une application ayant fait seconde au startup weekend Nantes sous le nom de "Dealz Me". <br>
+		Grace à cette application, vous aurez accès à un grand nombre d'annonces géolocalisées. Postées par des particuliers directement sur l'application ou sur Ebay, vous serez donc maintenant capable d'optimiser vos achats en ne voyant que les annonces se trouvant près de chez vous. <br>
+		Si votre objectif est de vendre un objet, n'hésitez pas à poster une annonce via l'application pour profiter d'une meilleure visibilité. En plus de vendre sur Troovon, vous aurez la possibilité de partager simplement votre annonces par e-mail ou sur différents réseaux sociaux. 
+					</p>
+					<h3><a href="#">Bientôt sur le market</a></h3>
+
+					</div>
+				</div>
+				<div class="span5 columns">
+					<div class='gallery'>
+						<img id="imgtroovon" src="../../img/mobiles/troovon/1.png" class="imgmaxi"/>
+						<div class="pagination">
+  							<ul class="troovon">
+  				 	 			<li class="active"><a onclick="gallery(1,'troovon');">1</a></li>
+    							<li><a onclick="gallery(2,'troovon');">2</a></li>
+   					 			<li><a onclick="gallery(3,'troovon');">3</a></li>
+   					 			<li><a onclick="gallery(4,'troovon');">4</a></li>
+  							</ul
+  						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-------------------------------------- taskMgr part ----------------------------------------->
+		<section id="taskmgr">
+			<div class="page-header">
+				<h1>Multitask Manager</h1>
+			</div>
+			<div class="row show-grid">
+				<div class="span11 columns">
+					<div class="description">
+					<p>
+					MultitaskManager est une application destin?e au smartphone poss?dant l'OS Android. Elle permettra ˆ ces utilisateurs de gérer facilement les applications tournant en tâche de fond. L'utilisateur peut ainsi la lancer rapidement ou la fermer définitivement.
+
+De plus, un menu est pr?sent. Il permet de tuer toutes les applications d'un seul coup. Un second item permet d'activer/désactiver le "click to kill". Cette option permet de tuer une application juste en touchant son icone. Plus de possibilité de lancer une application. Cette option est lˆ pour r?pondre aux personnes souhaitant tuer en masse des applications. 
+					</p>
+					<h3><a href="https://market.android.com/details?id=stephane.castrec.mains&feature=search_result">Télécharger sur le market</a></h3>
+
+					</div>
+				</div>
+				<div class="span5 columns">
+					<div class='gallery'>
+						<img id="imgtaskmgr" src="../../img/mobiles/taskmgr/1.png" class="imgmaxi"/>
+						<div class="pagination">
+  							<ul class="taskmgr">
+  				 	 			<li class="active"><a onclick="gallery(1,'taskmgr');">1</a></li>
+    							<li><a onclick="gallery(2,'taskmgr');">2</a></li>
+  							</ul
+  						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-------------------------------------- rakdroid part ----------------------------------------->
+		<section id="rakdroid">
+			<div class="page-header">
+				<h1>Rakdroid</h1>
+			</div>
+			<div class="row show-grid">
+				<div class="span10 columns">
+					<div class="description">
+					<p>
+						Dans tous types de communautés, des échanges de tâches, de facture, le partage d’information est une chose fondamentale. On observe par exemple dans certaines familles ou colocation l’apparition de tableaux « Mémo » ou des post-it sur le bureau afin de s’échanger les informations indispensables. Le but de Community Notes est donc d’automatiser ça au travers d’une application mobile.<br>
+						Grace à cet application vous pourrez donc vous créer votre propre réseau social fermé et effectuer les fonctions suivantes:
+						<ul>
+							<li>Partage de notes simple ou "à faire";</li>
+							<li>Partage de listes;</li>
+							<li>Partage de factures.</li>
+						</ul>  
+					</p>
+					<h3><a href="https://market.android.com/details?id=droid.stephane.castrec.rakdroid&feature=search_result">Télécharger sur le market</a></h3>
+
+					</div>
+				</div>
+				<div class="span6 columns">
+					<div class='gallery'>
+						<img id="imgrakdroid" src="../../img/mobiles/rakdroid/1.png" class="imgmaxi"/>
+						<div class="pagination">
+  							<ul class="rakdroid">
+  				 	 			<li class="active"><a onclick="gallery(1,'rakdroid');">1</a></li>
+    							<li><a onclick="gallery(2,'rakdroid');">2</a></li>
+   					 			<li><a onclick="gallery(3,'rakdroid');">3</a></li>
+   					 			<li><a onclick="gallery(4,'rakdroid');">4</a></li>
+  							</ul
+  						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+	<footer>
+  		<a href="mailto://stephane.castrec@gmail.com" target="_blank" class="contact">Mail</a>	
+		<a href="https://twitter.com/#!/_Stephane_" target="_blank" class="contact">Twitter</a>	
+		<a href="http://circule.me/stephane" target="_blank" class="contact">Google+</a>	
+		<a href="http://fr.linkedin.com/pub/st%C3%A9phane-castrec/16/606/6b8" target="_blank" class="contact">LinkedIn</a>
+		<a href="http://www.viadeo.com/fr/profile/stephane.castrec" target="_blank" class="contact">Viadeo</a>
+		
+		
+		<script src="js/jquery.js"></script>
+  		<script src="js/gallery.js"></script>
+  		<script src="js/section.js"></script>
+  		<script>
+  			displayMainContent(1);
+  		</script> 
+	</footer>
+</body>

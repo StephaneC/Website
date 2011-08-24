@@ -1,0 +1,51 @@
+#tabs { 
+	display:block; 
+	margin:0 auto 20px; 
+	position:relative; 
+	height: 20px;
+	font:15px Tahoma, Sans-serif; 
+} 
+ 
+#tabs ul {
+	margin: 0;
+	padding: 0;
+}
+
+.menuitem {
+	float: left;
+	list-style-type: none;
+	position:relative;
+	background: #C3D973; 
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-right: 5px;
+	min-width: 140px;
+	z-index: 99;
+}
+
+#tabs ul:after { 
+	content:"."; 
+	display:block; 
+	height:0; 
+	clear:both; 
+	visibility:hidden; 
+} 
+
+.subitem{
+	//position: absolute;
+	position: relative;
+}
+
+.subitem li{
+	list-style: none;
+}
+
+.subitem li a {
+	display: block;
+}
