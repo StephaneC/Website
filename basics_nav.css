@@ -1,0 +1,30 @@
+h3 span {
+    margin-right: 0.2rem;    
+}
+.tile.is-parent {
+    padding: 0.25rem;
+}
+
+.tile.is-vertical > .tile.is-child:not(:last-child) {
+    margin-bottom: 0.5rem !important;
+}
+
+article {
+    display:none;
+}
+article.active {
+    display:block;
+}
+
+@media screen and (max-width: 768px) {
+    .tile.is-parent {
+        padding: 0rem;
+    }
+    .tile.is-ancestor:not(:last-child) {
+        margin-bottom: 0rem;
+    }
+    .tile.is-vertical > .tile.is-child:not(:last-child) {
+        margin-bottom: 0rem !important;
+    }
+
+  }

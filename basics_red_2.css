@@ -1,0 +1,47 @@
+body {
+    
+}
+
+.dark {
+    color: #fff/* #ab000d*/ !important;
+}
+
+.light {
+    color: #ff6f60 !important;
+}
+
+.primary-tile {
+    background: #e53935;
+}
+
+.dark-tile {
+    background: #ab000d;
+}
+
+.light-tile {
+    background: #ff6f60;
+}
+
+h3 span {
+    margin-right: 0.2rem;    
+}
+.tile.is-parent {
+    padding: 0.25rem;
+}
+
+.tile.is-vertical > .tile.is-child:not(:last-child) {
+    margin-bottom: 0.5rem !important;
+}
+
+@media screen and (max-width: 768px) {
+    .tile.is-parent {
+        padding: 0rem;
+    }
+    .tile.is-ancestor:not(:last-child) {
+        margin-bottom: 0rem;
+    }
+    .tile.is-vertical > .tile.is-child:not(:last-child) {
+        margin-bottom: 0rem !important;
+    }
+
+  }
