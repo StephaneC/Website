@@ -1,61 +1,255 @@
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+
 <head>
-<title>Stephane Castrec</title>
-<!--<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/alsacreations/KNACSS/master/css/knacss.css"/>-->
-<link rel="stylesheet" type="text/css" href="./basics_blue_1.css" 
-  title="Default" media="screen, print" />
-<link rel="shortcut icon" href="./favicon.ico" />
-<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Stephane Castrec</title>
+        <!--<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/alsacreations/KNACSS/master/css/knacss.css"/>-->
+        <link rel="stylesheet" href="./bulma.min.css" />
+        <link rel="stylesheet" type="text/css" href="./basics_blue_1.css" title="Default" media="screen, print" />
+        <link rel="shortcut icon" href="./favicon.ico" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
-<body>
-<div class="container">
-        <img class="image profile"src="./img/photo.jpg" alt="photo image">
-        <div class="title">
-                <h1>St&eacute;phane <strong>Castrec</strong></h1>
-                <h2>D&eacute;veloppeur freelance</h2>
-                <h4><i class="fa fa-map-marker" aria-hidden="true"></i> Brest/Remote</h4>
-        </div>
 
-        <div class="content">
-                <p>
-                Passionn&eacute; par le d&eacute;veloppement et les challenges, je vous accompagne dans la r&eacute;alisation de vos projets informatiques.
-                </p>
-                <p>
-                    D&eacute;veloppeur fullstack, je peux vous accompagner sur du d&eacute;veloppement frontend tout framework, du d&eacute;veloppement backend en Java, NodeJS, Python ou autres. Pour le Mobile, je d&eacute;veloppe en Android natif (Java/Kotlin) et ou hybride.
-                </p>
-                <!--<span class="tag">ChatBot</span> 
+<body>
+                <img class="image profile" src="./img/photo.jpg" alt="photo image">
+                <div class="title">
+                        <h1>St&eacute;phane <strong>Castrec</strong></h1>
+                        <h2>D&eacute;veloppeur freelance</h2>
+                        <h4><i class="fa fa-map-marker" aria-hidden="true"></i> Brest/Remote</h4>
+                </div>
+
+                <div class="content">
+                        <p>
+                                Passionn&eacute; par le d&eacute;veloppement et les challenges, je vous accompagne dans
+                                la r&eacute;alisation de vos projets informatiques.
+                        </p>
+                        <p>
+                                D&eacute;veloppeur fullstack, je peux vous accompagner sur du d&eacute;veloppement
+                                frontend tout framework, du d&eacute;veloppement backend en Java, NodeJS, Python ou
+                                autres. Pour le Mobile, je d&eacute;veloppe en Android natif (Java/Kotlin) et ou
+                                hybride.
+                        </p>
+                        <!--<span class="tag">ChatBot</span> 
                 <span class="tag">Web</span> 
                 <span class="tag">Android</span> 
                 <span class="tag">Backend</span>
                 <span class="tag">Formations</span>-->
-                <span class="skill">#ChatBot</span> <span class="skill">#Web</span> <span class="skill">#Android</span> <span class="skill">#Backend</span> <span class="skill">Formations</span>
-        </div>
-        <div>
-            <a href="https://www.twitter.com/_stephane_" target="_blank" class="sn">
-                    <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>  
-            </a>
-            <a href="https://www.linkedin.com/in/st%C3%A9phane-castrec-6b860616/" target="_blank" class="sn">
-                    <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>  
-            </a>
-            <a href="mailto:freelance@stephanecastrec.fr" target="_blank" class="sn">
-                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>  
-            </a>
-            <a href="https://www.github.com/StephaneC" target="_blank" class="sn">
-                    <i class="fa fa-github-alt fa-2x" aria-hidden="true"></i>
-            </a>
+                        <a class="skill" onclick="displaySample('chatbot-samples')">#ChatBot</a>
+                        <a class="skill" onclick="displaySample('web-samples')">#Frontend</a>
+                        <a class="skill" onclick="displaySample('android-samples')">#Mobile</a>
+                        <a class="skill" onclick="displaySample('backend-samples')">#Backend</a>
+                        <a class="skill" onclick="displaySample('formations-samples')">Formations</a>
+                </div>
+                <div id="formations-samples" class="samples">
+                        <article class="message is-dark">
+                                <div class="message-header">
+                                        <p>IDEA technologies</p>
+                                </div>
+                                <div class="message-body">
+                                        Formations &agrave; Angular et Ionic
+                                        <br>
+                                        <span class="skill dark">Angular</span> <span class="skill dark">Ionic</span>
+                                </div>
+                        </article>
+                        <article class="message is-dark">
+                                <div class="message-header">
+                                        <p>IMT Atlantique</p>
+                                </div>
+                                <div class="message-body">
+                                        Formations au d&eacute;veloppement mobile et web
+                                        <br>
+                                        <span class="skill dark">Android</span> <span class="skill dark">PWA</span>
+                                        <span class="skill dark">NodeJS</span>
+                                </div>
+                        </article>
+                        <article class="message is-dark">
+                                <div class="message-header">
+                                        <p>CESI</p>
+                                </div>
+                                <div class="message-body">
+                                        D&eacute;veloppement en environnement mobile
+                                        <br>
+                                        <span class="skill dark">Ionic</span> <span class="skill dark">Android</span>
+                                        <span class="skill dark">React Native</span> <span
+                                                class="skill dark">Flutter</span>
+                                </div>
+                        </article>
+                        <article class="message is-dark">
+                                <div class="message-header">
+                                        <p>Brest Open Campus</p>
+                                </div>
+                                <div class="message-body">
+                                        Webservices et Architecture
+                                        <br>
+                                        <span class="skill dark">Event Driven Architecture</span> <span
+                                                class="skill dark">APIs</span> <span
+                                                class="skill dark">Microservices</span> <span
+                                                class="skill dark">Patterns</span> <span class="skill dark">Cloud</span>
+                                </div>
+                        </article>
+                </div>
+                <div id="backend-samples" class="samples">
+                        <article class="message is-dark">
+                                <div class="message-header">
+                                        <p>Cr&eacute;dit Mutuel Ark&eacute;a</p>
+                                </div>
+                                <div class="message-body">
+                                        Mise en place de l'approche micro services et des APIs REST
+                                        <br>
+                                        <span class="skill dark">Java</span> <span class="skill dark">Spring</span>
+                                        <span class="skill dark">NodeJS</span> <span
+                                                class="skill dark">Architecture</span> <span
+                                                class="skill dark">Microservices</span>
+                                </div>
+                        </article>
+                        <article class="message is-dark">
+                                <div class="message-header">
+                                        <p>EQWall</p>
+                                </div>
+                                <div class="message-body">
+                                        Mise en place de l'architecture avec de fortes contraintes temps r&eacute;el,
+                                        scalabilit&eacute; et &eacute;volutivit&eacute;.
+                                        <br>
+                                        <span class="skill dark">Spring MVC</span> <span
+                                                class="skill dark">NodeJS</span> <span
+                                                class="skill dark">RabbitMQ</span> <span
+                                                class="skill dark">R&eacute;dis</span>
+                                </div>
+                        </article>
+                </div>
+
+                <div id="android-samples" class="samples">
+                        <article class="message is-dark">
+                                <div class="message-header">
+                                        <p>Cr&eacute;dit Mutuel Ark&eacute;a</p>
+                                </div>
+                                <div class="message-body">
+                                        R&eacute;lisation de divers applications mobiles (Android et Hybrides)
+                                        <br>
+                                        <span class="skill dark">Android</span> <span class="skill dark">Ionic</span>
+                                </div>
+                        </article>
+                        <article class="message is-dark">
+                                <div class="message-header">
+                                        <p>Troovon</p>
+                                </div>
+                                <div class="message-body">
+                                        R&eacute;lisation d'une application de location d'objet pour les CE.
+                                        <br>
+                                        <span class="skill dark">Android</span>
+                                </div>
+                        </article>
+                        <article class="message is-dark">
+                                <div class="message-header">
+                                        <p>EQWall</p>
+                                </div>
+                                <div class="message-body">
+                                        R&eacute;alisation d'une application d'interactions temps r&eacute;el
+                                        <br>
+                                        <span class="skill dark">Android</span>
+                                </div>
+                        </article>
+                </div>
+                <div id="web-samples" class="samples">
+                        <article class="message is-dark">
+                                <div class="message-header">
+                                        <p>Cr&eacute;dit Mutuel Ark&eacute;a</p>
+                                </div>
+                                <div class="message-body">
+                                        R&eacute;lisation de divers sites web
+                                        <br>
+                                        <span class="skill dark">PWA</span> <span class="skill dark">AngularJS</span>
+                                        <span class="skill dark">Angular</span>
+                                </div>
+                        </article>
+                        <article class="message is-dark">
+                                <div class="message-header">
+                                        <p>Atsuke</p>
+                                </div>
+                                <div class="message-body">
+                                        R&eacute;lisation d'un site web d'envoi de sms.
+                                        <br>
+                                        <span class="skill dark">Angular</span> <span
+                                                class="skill dark">Typescript</span>
+
+                                </div>
+                        </article>
+                        <article class="message is-dark">
+                                <div class="message-header">
+                                        <p>EQWall</p>
+                                </div>
+                                <div class="message-body">
+                                        R&eacute;alisation de trois sites web de gestion de contenu temps r&eacute;el
+                                        <br>
+                                        <span class="skill dark">AngularJS</span>
+                                </div>
+                        </article>
+                </div>
+                <div id="chatbot-samples" class="samples">
+                        <article class="message is-dark">
+                                <div class="message-header">
+                                        <p>Cr&eacute;dit Mutuel Ark&eacute;a</p>
+                                </div>
+                                <div class="message-body">
+                                        R&eacute;lisation de divers chatbots vocaux et textuels allant du chatbot de
+                                        recrutement au chatbot purement bancaire.
+                                        <br>
+                                        <span class="skill dark">Facebook Messenger</span> <span
+                                                class="skill dark">Dialogflow</span> <span class="skill dark">Design
+                                                Chatbot</span> <span class="skill dark">ActionsOnGoogle</span>
+                                </div>
+                        </article>
+                        <article class="message is-dark">
+                                <div class="message-header">
+                                        <p>Europe 1 Digital</p>
+                                </div>
+                                <div class="message-body">
+                                        R&eacute;lisation de divers chatbots pour Google Home, Assistants et Alexa. On
+                                        peut notamment citer <a
+                                                href="https://www.amazon.fr/lagardere-active-Hondelatte-raconte/dp/B07GRCF7YB"><strong>Hondelatte
+                                                        raconte</strong></a> ou <strong>Europe 1 contact</strong> qui
+                                        permet d'envoyer un message &agrave; l'antenne.
+                                        <br>
+                                        <span class="skill dark">Alexa</span> <span
+                                                class="skill dark">ActionsOnGoogle</span> <span
+                                                class="skill dark">AWS</span>
+
+                                </div>
+                        </article>
+                        <article class="message is-dark">
+                                <div class="message-header">
+                                        <p>Tayasui</p>
+                                </div>
+                                <div class="message-body">
+                                        R&eacute;alisation d'un chatbot d'interaction &agrave; destination des enfants :
+                                        <strong>Talking to Carl </strong>
+                                        <br>
+                                        <span class="skill dark">Chatscript</span>
+                                </div>
+                        </article>
+                </div>
+                <div class="footer">
+                        <a href="https://www.twitter.com/_stephane_" target="_blank" class="sn">
+                                <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/st%C3%A9phane-castrec-6b860616/" target="_blank"
+                                class="sn">
+                                <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:freelance@stephanecastrec.fr" target="_blank" class="sn">
+                                <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.github.com/StephaneC" target="_blank" class="sn">
+                                <i class="fa fa-github-alt fa-2x" aria-hidden="true"></i>
+                        </a>
+                </div>
+
         </div>
 
-</div>
-
-</div>
 </body>
 <script src="https://use.fontawesome.com/2c9dd5c411.js"></script>
+<script src="./myjs.js"></script>
 
 </html>
-
-

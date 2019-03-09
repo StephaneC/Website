@@ -1,18 +1,29 @@
 body {
     background-color: #0086c3;
-    color: #fff;
+    color: #fff !important;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+    height: 100%;
 }
 
 h1 {
     font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+h2 {    
+    color: #fff;
+}
+h4 {    
+    color: #fff;
 }
 
 .profile.image {
     border-radius: 50%;
     width: 200px;
     height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  
 }
 
 .container {
@@ -20,6 +31,7 @@ h1 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 100%;
 }
 
 .content {
@@ -51,6 +63,7 @@ a.sn {
     color: #0086c3;    
     padding: 2px 6px 2px 6px;
     text-decoration: none;
+
 }
 
 .content {
@@ -63,4 +76,33 @@ a.sn {
 
 .light {
     color: #73e8ff;
+}
+
+.message.is-dark {
+    background-color: #fff;
+    min-width: 300px;
+    border-radius: 0px;
+}
+.message.is-dark .message-header {
+    background-color: #fff;
+    color: #0086C3;
+}
+.message:last-child {
+    margin-bottom: 1.5rem;
+}
+
+.samples {
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    display: none;
+}
+.message {
+    margin: 0 15px 0 15px;
+    text-align: left;
+
+}
+.footer {
+    background-color: #0086c3;
+
 }
